@@ -3,5 +3,6 @@ import bellIcon from "./bell.svg";
 import messageIcon from "./message.svg";
 import crownIcon from "./crown.svg";
 import sendIcon from "./send.svg";
+import logoIcon from "./logo.svg";
 
-export { searchIcon, bellIcon, messageIcon, crownIcon, sendIcon };
+export { searchIcon, bellIcon, messageIcon, crownIcon, sendIcon, logoIcon };
