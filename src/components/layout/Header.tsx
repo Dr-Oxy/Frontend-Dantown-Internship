@@ -20,7 +20,7 @@ const Header = () => {
     <header
       className={` grid grid-cols-3 lg:grid-cols-11  ${avenirRegular.className}`}
     >
-      <div className="col-span-2 lg:col-span-8 lg:border-r lg:pr-10 border-gray2 flex items-start justify-between">
+      <div className=" pb-5 col-span-2 lg:col-span-8 lg:border-r lg:pr-10 border-gray2 flex items-start justify-between">
         <div>
           <h1
             className={`text-darkBlue text-lg lg:text-2xl ${avenirBold.className} `}
@@ -42,7 +42,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="col-span-1 lg:pl-10 lg:col-span-3">
+      <div className=" pb-5 col-span-1 lg:pl-10 lg:col-span-3">
         <div className="flex items-center gap-x-6">
           <button className="flex lg:hidden  items-center justify-center bg-white/60 p-3 rounded shadow-lg">
             <Image

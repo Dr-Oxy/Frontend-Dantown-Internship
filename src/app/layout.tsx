@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="h-screen grid grid-cols-1 lg:grid-cols-[240px,1fr]">
+        <div className=" h-full lg:h-screen  grid grid-cols-1 lg:grid-cols-[240px,1fr]">
           <Sidebar />
           <main className="bg-mainwhite p-4 md:p-10 h-full overflow-hidden">
             <Header />
