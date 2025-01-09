@@ -29,6 +29,10 @@ export default {
       height: {
         mainHeight: "calc(100vh - 135px)",
       },
+      backgroundImage: {
+        "link-linear":
+          "linear-gradient(90.14deg, rgba(84, 188, 189, 0.5), rgba(84, 188, 189, 0.2) 99.89%)",
+      },
     },
   },
   plugins: [],
