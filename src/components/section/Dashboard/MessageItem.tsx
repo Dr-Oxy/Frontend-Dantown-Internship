@@ -13,12 +13,17 @@ const MessageItem = ({
   unRead,
   onClick,
 }: MessageItemProps) => {
+  const colors = ["bg-lightPurple", "bg-ligthBlue2", "bg-lightRed2"];
+  const bgColor = colors[id % colors.length];
+
   return (
     <article
       onClick={onClick}
-      className={`flex items-center pt-4 cursor-pointer`}
+      className={`flex mb-4 items-center cursor-pointer`}
     >
-      <div className="w-14 h-14 mr-4 rounded-full  bg-black" />
+      <div
+        className={` h-10 w-10 md:w-14 md:h-14 rounded-full mr-4 rounded-ful bgColor ${bgColor} `}
+      />
 
       <div
         className={`  flex-1 flex items-center ${

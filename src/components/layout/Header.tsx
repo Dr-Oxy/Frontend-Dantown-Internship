@@ -18,7 +18,7 @@ import { profileDefaultImg } from "../../../public/assets/images";
 const Header = () => {
   return (
     <header
-      className={` grid grid-cols-3 lg:grid-cols-11  ${avenirRegular.className}`}
+      className={` grid grid-cols-3 lg:grid-cols-12  ${avenirRegular.className}`}
     >
       <div className=" pb-5 col-span-2 lg:col-span-8 lg:border-r lg:pr-10 border-gray2 flex items-start justify-between">
         <div>
@@ -42,8 +42,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className=" pb-5 col-span-1 lg:pl-10 lg:col-span-3">
-        <div className="flex items-center gap-x-6">
+      <div className=" pb-5 col-span-1 lg:pl-10 lg:col-span-4">
+        <div className="flex items-center justify-end gap-x-6">
           <button className="flex lg:hidden  items-center justify-center bg-white/60 p-3 rounded shadow-lg">
             <Image
               height={14}

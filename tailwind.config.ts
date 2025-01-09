@@ -9,8 +9,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         mainwhite: "#F7FAFC",
         darkBlue: "#0F3F62",
         gray1: "#8695A0",
@@ -26,6 +24,7 @@ export default {
         cyan3: "#54BCBD",
         ligthBlue2: "#D9EDFF",
         lightRed2: "#FFDAD9",
+        lightPurple: "#D9DAFF",
       },
       height: {
         mainHeight: "calc(100vh - 135px)",

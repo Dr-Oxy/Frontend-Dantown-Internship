@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import MessageItem from "./MessageItem";
 import ChartInterface from "./ChartInterface";
 
+import { messages } from "@/utils/dummyData";
+
 const ChatArea = () => {
   const [currentChat, setCurrentChat] = useState(messages[0]);
 
@@ -29,33 +31,6 @@ const ChatArea = () => {
 };
 
 export default ChatArea;
-
-const messages = [
-  {
-    id: 1,
-    name: "Ironmen",
-    message: "When will the event be held?",
-    unRead: 1,
-  },
-  {
-    id: 2,
-    name: "Ariana Grande",
-    message: "Alright then. See you there",
-    unRead: 0,
-  },
-  {
-    id: 3,
-    name: "Shakira Wakawaka",
-    message: "When will the event be held?",
-    unRead: 0,
-  },
-  {
-    id: 4,
-    name: "Trent Alexander Arnold",
-    message: "When will the event be held?",
-    unRead: 0,
-  },
-];
 
 interface ItemProps {
   id: number;

@@ -2,7 +2,13 @@
 import { DashCard, FriendsTable, ChatArea } from "@/components/section";
 import { cyclist, skater, yoga } from "../../public/assets/images";
 
-import { avenirBlack, avenirBold } from "../../public/assets/fonts";
+import {
+  avenirBlack,
+  avenirBold,
+  avenirRegular,
+} from "../../public/assets/fonts";
+
+import { tableData } from "@/utils/dummyData";
 
 const Home = () => {
   return (
@@ -40,16 +46,21 @@ const Home = () => {
           </div>
 
           <div className="mt-7">
-            <FriendsTable data={data} />
+            <FriendsTable data={tableData} />
           </div>
         </div>
       </section>
 
-      <section className=" overflow-y-auto  pt-5 lg:pl-8 lg:col-span-4">
+      <section className=" overflow-y-auto  lg:pt-5 lg:pl-8 lg:col-span-4">
         <h3
-          className={`${avenirBlack.className} mb-6 text-base font-bold text-darkBlue`}
+          className={`${avenirBlack.className} flex gap-x-[10px] mb-6 text-base font-bold text-darkBlue`}
         >
-          Chats
+          Chats{" "}
+          <div
+            className={`${avenirRegular.className} flex items-center justify-center  h-6 w-9 rounded-2xl bg-ligthBlue text-xs font-normal`}
+          >
+            14
+          </div>
         </h3>
 
         <ChatArea />
@@ -59,30 +70,3 @@ const Home = () => {
 };
 
 export default Home;
-
-const data = [
-  {
-    id: 1,
-    name: "Mamang Ironmen",
-    category: "Skaters",
-    point: "2.140",
-  },
-  {
-    id: 2,
-    name: "Ariana Grande",
-    category: "Cyclists",
-    point: "1.814",
-  },
-  {
-    id: 3,
-    name: "Trent Alexander Arnold",
-    category: "Skaters",
-    point: "1.620",
-  },
-  {
-    id: 4,
-    name: "Shakira Wakawaka",
-    category: "Yogas",
-    point: "1.280",
-  },
-];

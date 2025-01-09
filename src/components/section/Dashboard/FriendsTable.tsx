@@ -46,20 +46,24 @@ const FriendsTable = ({ data }: FriendTableProps) => {
         const name = info.getValue();
 
         return (
-          <div className="  flex items-center">
+          <div className=" flex gap-x-3 items-center">
             <div
-              className={`h-10 w-10 rounded-full ${
+              className={` h-10 w-10 rounded-full ${
                 id % 2 === 0 ? " bg-lightRed2 " : " bg-ligthBlue2"
               } `}
             />
 
-            <p
-              className={`${avenirBold.className} ml-3 mr-7 whitespace-normal text-darkBlue font-medium text-base`}
-            >
-              {name}
-            </p>
+            <div className="flex-1 flex gap-x-7 items-center">
+              <p
+                className={`${avenirBold.className} whitespace-nowrap  text-darkBlue font-medium text-sm md:text-base`}
+              >
+                {name}
+              </p>
 
-            {id === 1 && <Image src={crownIcon} alt={name} />}
+              {id === 1 && (
+                <Image height={24} width={24} src={crownIcon} alt={name} />
+              )}
+            </div>
           </div>
         );
       },
@@ -117,9 +121,9 @@ export const HexagonWithNumber = ({ id }: { id: number }) => {
   return (
     <div className="relative flex justify-center items-center h-8 w-8 bg-teal-500 text-white font-bold text-sm">
       <span>{id}</span>
-      {/* Top Triangle */}
+
       <div className="absolute -top-1 w-0 h-0 border-l-[16px] border-r-[16px] border-b-[8px] border-transparent border-b-teal-500"></div>
-      {/* Bottom Triangle */}
+
       <div className="absolute -bottom-1 w-0 h-0 border-l-[16px] border-r-[16px] border-t-[8px] border-transparent border-t-teal-500"></div>
     </div>
   );
