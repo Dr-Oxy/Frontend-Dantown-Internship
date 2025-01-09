@@ -18,6 +18,7 @@ export default {
         ligthBlue: "#E0F3F3",
         cyan: "#54BCBD",
         cyan2: "#3DEBF6",
+        cyan4: "#5DC2C4",
         lightCyan: "#DAFDFF",
         lightGreen: "#E7F7F8",
         lightRed: "#FFECE8",

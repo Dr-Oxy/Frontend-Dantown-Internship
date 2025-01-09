@@ -1,13 +1,13 @@
 "use client";
-import { DashCard, FriendsTable } from "@/components/section";
+import { DashCard, FriendsTable, ChatArea } from "@/components/section";
 import { cyclist, skater, yoga } from "../../public/assets/images";
 
-import { avenirBold } from "../../public/assets/fonts";
+import { avenirBlack, avenirBold } from "../../public/assets/fonts";
 
 const Home = () => {
   return (
-    <div className="w-full h-full lg:h-mainHeight grid grid-cols-1 lg:grid-cols-11 ">
-      <section className=" overflow-y-auto  pt-5 lg:col-span-8 lg:border-r lg:pr-10 border-gray2">
+    <div className="w-full h-full lg:h-mainHeight grid grid-cols-1 lg:grid-cols-12 ">
+      <section className=" overflow-y-auto  pt-5 lg:col-span-8 lg:border-r lg:pr-8 border-gray2">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           <DashCard
             src={cyclist}
@@ -45,8 +45,14 @@ const Home = () => {
         </div>
       </section>
 
-      <section className=" overflow-y-auto  pt-5 lg:pl-10 lg:col-span-3">
-        Right Side
+      <section className=" overflow-y-auto  pt-5 lg:pl-8 lg:col-span-4">
+        <h3
+          className={`${avenirBlack.className} mb-6 text-base font-bold text-darkBlue`}
+        >
+          Chats
+        </h3>
+
+        <ChatArea />
       </section>
     </div>
   );
