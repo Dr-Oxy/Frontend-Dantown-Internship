@@ -15,7 +15,7 @@ const Sidebar = () => {
     <div
       className={`${avenirRegular.className} shadow-md hidden lg:block h-full bg-white text-black`}
     >
-      <div className="py-8 text-center">
+      <div className="py-10 text-center">
         <Image className="mx-auto" src={logoIcon} alt="Sedboi.ey logo" />
       </div>
 
@@ -46,7 +46,7 @@ const Sidebar = () => {
           })}
         </ul>
 
-        <ul className="mt-10" id="categories">
+        <ul className="mt-8" id="categories">
           {categories?.map((item) => (
             <Link key={item.id} href={item.link}>
               <li className=" px-8 bg-white py-3 flex items-center text-gray1 gap-x-4 hover:bg-[#FFEEEB] transition-colors ease-in-out ">
